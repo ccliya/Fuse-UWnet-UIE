@@ -31,8 +31,7 @@ as following：
     final feature_vector → RGB enhancement
 
 
-
-    ===================above are date 2025.07.18====================================
+===================above are date 2025.07.18====================================
     result: the above methods had week score of standard UIQM\SSIM\PSNR(epoch1-100):
     指标	        MIN	      MAX	      STABLE	      CONCLUSION
     Avg Loss      0.2709	  0.0099	  < 0.02	      模型已充分收敛
@@ -45,4 +44,4 @@ as following：
     2、lead in _UIQM-aware_ or _SSIM-aware_ training mechanism.
     3、try to use UGAN to enhance the image reality texture.
     4、focus on the pair strategy of the clean-fuse of datasets.
-    ================================================================================
+================================================================================
