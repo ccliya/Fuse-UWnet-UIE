@@ -2,8 +2,13 @@
 import os
 import cv2
 import numpy as np
-from skimage.metrics import structural_similarity, peak_signal_noise_ratio
+from skimage.metrics import structural_similarity,peak_signal_noise_ratio
+
+
 from uiqm_utils import getUIQM
+
+
+#from skimage.metrics import structural_similarity
 
 def calculate_metrics_ssim_psnr(generated_image_path, ground_truth_image_path, resize_size=(256, 256)):
     generated_image_list = os.listdir(generated_image_path)
@@ -21,7 +26,17 @@ def calculate_metrics_ssim_psnr(generated_image_path, ground_truth_image_path, r
         ground_truth_image = cv2.resize(ground_truth_image, resize_size)
 
         # calculate SSIM
-        error_ssim, diff_ssim = structural_similarity(generated_image, ground_truth_image, full=True, multichannel=True)
+        H, W = generated_image.shape[:2]
+        win_size = 3 if min(H, W) < 7 else 7
+
+        error_ssim, diff_ssim = structural_similarity(
+            generated_image,
+            ground_truth_image,
+            win_size=win_size,
+            full=True,
+            channel_axis=-1  # 如果你的 skimage < 0.19 就改成 multichannel=True
+        )
+
         error_list_ssim.append(error_ssim)
 
         generated_image = cv2.cvtColor(generated_image, cv2.COLOR_BGR2GRAY)

@@ -3,18 +3,23 @@ import os
 from PIL import Image
 
 
-def get_image_list(raw_image_path, clear_image_path, is_train):
-    image_list = []
-    raw_image_list = [raw_image_path + i for i in os.listdir(raw_image_path)]
+def get_image_list(raw_image_path, clear_image_path, is_train=True):
+    raw_filenames = sorted(os.listdir(raw_image_path))
     if is_train:
-        for raw_image in raw_image_list:
-            image_file = raw_image.split('/')[-1]
-            image_list.append([raw_image, os.path.join(clear_image_path + image_file), image_file])
+        clear_filenames = sorted(os.listdir(clear_image_path))
+        return [
+            (
+                os.path.join(raw_image_path, rf),
+                os.path.join(clear_image_path, cf),
+                rf
+            )
+            for rf, cf in zip(raw_filenames, clear_filenames)
+        ]
     else:
-        for raw_image in raw_image_list:
-            image_file = raw_image.split('/')[-1]
-            image_list.append([raw_image, None, image_file])
-    return image_list
+        return [
+            (os.path.join(raw_image_path, rf), None, rf)
+            for rf in raw_filenames
+        ]
 
 
 class UWNetDataSet(torch.utils.data.Dataset):

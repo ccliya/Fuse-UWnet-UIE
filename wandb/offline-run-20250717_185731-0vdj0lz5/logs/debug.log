@@ -1,0 +1,23 @@
+2025-07-17 18:57:31,890 INFO    MainThread:713705 [wandb_setup.py:_flush():80] Current SDK version is 0.21.0
+2025-07-17 18:57:31,890 INFO    MainThread:713705 [wandb_setup.py:_flush():80] Configure stats pid to 713705
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_setup.py:_flush():80] Loading settings from /home/x13277/.config/wandb/settings
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_setup.py:_flush():80] Loading settings from /home/x13277/PaperFSector/Fuse-UWnet-UIE/wandb/settings
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_setup.py:_flush():80] Loading settings from environment variables
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_init.py:setup_run_log_directory():703] Logging user logs to /home/x13277/PaperFSector/Fuse-UWnet-UIE/wandb/offline-run-20250717_185731-0vdj0lz5/logs/debug.log
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_init.py:setup_run_log_directory():704] Logging internal logs to /home/x13277/PaperFSector/Fuse-UWnet-UIE/wandb/offline-run-20250717_185731-0vdj0lz5/logs/debug-internal.log
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_init.py:init():830] calling init triggers
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_init.py:init():835] wandb.init called with sweep_config: {}
+config: {'_wandb': {}}
+2025-07-17 18:57:31,891 INFO    MainThread:713705 [wandb_init.py:init():871] starting backend
+2025-07-17 18:57:32,098 INFO    MainThread:713705 [wandb_init.py:init():874] sending inform_init request
+2025-07-17 18:57:32,102 INFO    MainThread:713705 [wandb_init.py:init():882] backend started and connected
+2025-07-17 18:57:32,103 INFO    MainThread:713705 [wandb_init.py:init():953] updated telemetry
+2025-07-17 18:57:32,108 INFO    MainThread:713705 [wandb_init.py:init():977] communicating run to backend with 90.0 second timeout
+2025-07-17 18:57:32,216 INFO    MainThread:713705 [wandb_init.py:init():1029] starting run threads in backend
+2025-07-17 18:57:32,296 INFO    MainThread:713705 [wandb_run.py:_console_start():2458] atexit reg
+2025-07-17 18:57:32,296 INFO    MainThread:713705 [wandb_run.py:_redirect():2306] redirect: wrap_raw
+2025-07-17 18:57:32,297 INFO    MainThread:713705 [wandb_run.py:_redirect():2375] Wrapping output streams.
+2025-07-17 18:57:32,297 INFO    MainThread:713705 [wandb_run.py:_redirect():2398] Redirects installed.
+2025-07-17 18:57:32,297 INFO    MainThread:713705 [wandb_init.py:init():1075] run started, returning control to user process
+2025-07-17 18:57:32,298 INFO    MainThread:713705 [wandb_run.py:_config_callback():1363] config_cb None None {'input_images_path': './data/input/', 'label_images_path': './data/label/', 'test_images_path': './data/input/', 'GTr_test_images_path': './data/input/', 'test': True, 'lr': 0.0002, 'step_size': 10, 'num_epochs': 100, 'train_batch_size': 1, 'test_batch_size': 1, 'resize': 256, 'cuda_id': '0', 'print_freq': 1, 'snapshot_freq': 2, 'snapshots_folder': './snapshots/', 'output_images_path': './data/output/', 'num_layers': 3, 'eval_steps': 1, 'test_mode': True, 'epochs': 100, 'eval_interval': 1, 'train_raw_image_path': './data/input/', 'train_clear_image_path': './data/label/', 'test_raw_image_path': './data/input/', 'test_clear_image_path': './data/input/', 'device': 'cuda:0', 'snapshot_dir': './snapshots/'}
+2025-07-17 18:57:42,240 INFO    MsgRouterThr:713705 [mailbox.py:close():129] [no run ID] Closing mailbox, abandoning 0 handles.

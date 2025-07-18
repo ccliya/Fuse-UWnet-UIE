@@ -1,0 +1,13 @@
+{"time":"2025-07-17T13:19:50.685573229+08:00","level":"INFO","msg":"stream: starting","core version":"0.21.0"}
+{"time":"2025-07-17T13:19:50.791619378+08:00","level":"WARN","msg":"GraphQL client is nil, skipping feature loading"}
+{"time":"2025-07-17T13:19:50.791690841+08:00","level":"INFO","msg":"stream: created new stream","id":"f360w2kw"}
+{"time":"2025-07-17T13:19:50.791704272+08:00","level":"INFO","msg":"stream: started","id":"f360w2kw"}
+{"time":"2025-07-17T13:19:50.791789659+08:00","level":"INFO","msg":"handler: started","stream_id":"f360w2kw"}
+{"time":"2025-07-17T13:19:50.791816096+08:00","level":"INFO","msg":"sender: started","stream_id":"f360w2kw"}
+{"time":"2025-07-17T13:19:50.791845671+08:00","level":"INFO","msg":"writer: Do: started","stream_id":"f360w2kw"}
+{"time":"2025-07-17T13:19:50.792127754+08:00","level":"WARN","msg":"runupserter: server does not expand metric globs but the x_server_side_expand_glob_metrics setting is set; ignoring"}
+{"time":"2025-07-17T13:19:51.795796153+08:00","level":"INFO","msg":"stream: closing","id":"f360w2kw"}
+{"time":"2025-07-17T13:19:51.795996323+08:00","level":"INFO","msg":"handler: closed","stream_id":"f360w2kw"}
+{"time":"2025-07-17T13:19:51.796004783+08:00","level":"INFO","msg":"writer: Close: closed","stream_id":"f360w2kw"}
+{"time":"2025-07-17T13:19:51.796013132+08:00","level":"INFO","msg":"sender: closed","stream_id":"f360w2kw"}
+{"time":"2025-07-17T13:19:51.796040821+08:00","level":"INFO","msg":"stream: closed","id":"f360w2kw"}

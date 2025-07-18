@@ -31,7 +31,7 @@ class UWnet(nn.Module):
         # 中层增强
         self.blocks = nn.Sequential(*[ConvBlock() for _ in range(2)])
         self.ela = ELA(base_ch)
-        self.deconv = DEConv(base_ch)
+        self.deconv = DEConv(in_channels=base_ch, out_channels=base_ch)
 
         self.mid_fuse = nn.Conv2d(base_ch * 2, base_ch, 1)
         self.mid_norm = nn.InstanceNorm2d(base_ch)
