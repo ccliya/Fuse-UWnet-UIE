@@ -32,8 +32,10 @@ as following：
 
 
 ===================above are date 2025.07.18====================================
-    result: the above methods had week score of standard UIQM\SSIM\PSNR(epoch1-100):
+result: the above methods had week score of standard UIQM\SSIM\PSNR(epoch1-100):
+    
     指标	        MIN	      MAX	      STABLE	      CONCLUSION
+    
     Avg Loss      0.2709	  0.0099	  < 0.02	      模型已充分收敛
     UIQM	        0.0706	  0.4020	  ~0.30–0.38	  增强质量中等，有所提升
     SSIM	        0.2435	  0.4060	  ~0.36–0.39	  图像结构恢复中等
